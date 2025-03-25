@@ -60,6 +60,7 @@ Run the following command to build the Docker image:
 ```sh
 docker build -t mysql-custom .
 ```
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103430.png)
 
 💡 *This command creates a custom MySQL image named `mysql-custom`.*
 
@@ -71,6 +72,8 @@ To start a MySQL container using the custom image and set the root password, exe
 ```sh
 docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -d mysql-custom
 ```
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103448.png)
+
 
 ### 🧐 Explanation:
 - 🏷 Creates a container named `mysql-container`.
@@ -86,6 +89,7 @@ To enter the running container’s shell:
 ```sh
 docker exec -it mysql-container bash
 ```
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103502.png)
 
 💡 *This command opens an interactive terminal session inside `mysql-container`.*
 
@@ -98,6 +102,8 @@ Once inside the container, access MySQL using:
 mysql -u root -p
 ```
 
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103502.png)
+
 🔑 Enter the root password (`root`) when prompted.
 
 ---
@@ -108,12 +114,14 @@ After logging into MySQL, check the available databases:
 ```sql
 SHOW DATABASES;
 ```
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103521.png)
 
 🔄 Switch to the `Abhinav` database:
 
 ```sql
 USE Abhinav;
 ```
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103529.png)
 
 📊 Query the `students` table:
 
@@ -122,6 +130,8 @@ SELECT * FROM students;
 ```
 
 ---
+
+![Example Image](https://github.com/Abhinav-Kukreti/DOCKER-CONTAINER/blob/main/Containerized%20MySQL%2C%20Agile%20%26%20Efficient/Screenshot%202025-03-25%20103537.png)
 
 ## 🎉 Conclusion
 🎯 You have successfully set up MySQL in a Docker container with an initialization script. This method ensures that the database is automatically initialized with predefined schemas and data when the container starts. 🚀 Happy coding! 🎨
